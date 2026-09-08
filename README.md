@@ -1,5 +1,6 @@
 # 🚀 JobForge: Autonomous AI Job Application Pipeline
 
+![Tests](https://github.com/prathamesh792002/JobForge/actions/workflows/tests.yml/badge.svg)
 ![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109.2-009688.svg)
 ![Gemini AI](https://img.shields.io/badge/AI-Google_Gemini_2.5-orange.svg)
