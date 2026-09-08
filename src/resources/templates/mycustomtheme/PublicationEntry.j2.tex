@@ -1,0 +1,8 @@
+% ── Publication Entry — not used, placeholder to satisfy RenderCV schema ──
+\resumeSubStart
+  \item\small{
+    ((* if entry.authors *))\textit{<<entry.authors | join(", ")>>}. ((* endif *))
+    \textbf{<<entry.title>>}((* if entry.journal *)), \textit{<<entry.journal>>}((* endif *))((* if entry.date *)) (<<entry.date>>)((* endif *)).
+    ((* if entry.doi *))\href{https://doi.org/<<entry.doi>>}{doi:<<entry.doi>>}((* endif *))
+  }
+\resumeSubEnd

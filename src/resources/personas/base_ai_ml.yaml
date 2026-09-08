@@ -1,0 +1,75 @@
+cv:
+  name: Prathamesh Shirole
+  location: Chennai, Tamil Nadu
+  email: pshirole2555@gmail.com
+  phone: "+91 90758 33524"
+  social_networks:
+    - network: LinkedIn
+      username: prathamesh-shirole-979281253
+    - network: GitHub
+      username: prathamesh792002
+  sections:
+    summary:
+      - "AI Engineer specializing in Generative AI, RAG pipelines, and agentic systems, with hands-on experience in end-to-end LLM integration using Gemini API, LangChain, and Hugging Face within production-grade Python backends."
+    education:
+      - institution: Dr. Babasaheb Ambedkar Technological University
+        area: Computer Engineering
+        degree: B.Tech
+        start_date: 2020-01
+        end_date: 2024-07
+        highlights:
+          - "CGPA: 7.56"
+          - "Coursework: Machine Learning, Artificial Intelligence, Data Structures and Algorithms, DBMS."
+    technical_skills:
+      - label: Generative AI and LLMs
+        details: Gemini API, LangChain, Hugging Face, RAG, Prompt Engineering, OpenAI API, AI Agents
+      - label: AI and ML
+        details: TensorFlow, Scikit-Learn, OpenCV, NLP, NER, Text Classification, NumPy, Pandas
+      - label: Languages and Backend
+        details: Python, FastAPI, Flask, MySQL, Redis
+      - label: Tools and Infra
+        details: Docker, Git, Postman, Basic AWS, Ubuntu Linux
+    experience:
+      - company: Infosys Ltd.
+        position: Artificial Intelligence Intern
+        location: Chennai, India
+        start_date: 2025-07
+        end_date: present
+        highlights:
+          - "Built text classification and NER modules using Hugging Face transformers, improving data-labelling precision 15% on high-volume datasets."
+          - "Engineered automated preprocessing pipelines in Python, cutting feature-engineering time 25% and boosting model training efficiency."
+          - "Developed Generative AI prototypes integrating Gemini API and LangChain for enterprise workflow automation."
+          - "Authored technical documentation for AI model deployment, ensuring 100% SDLC compliance."
+      - company: Siliconmount Tech Services
+        position: Data Science Intern
+        location: Remote
+        start_date: 2024-02
+        end_date: 2024-06
+        highlights:
+          - "Implemented DDL/DML MySQL schemas for sensitive data pipelines with ACID compliance; collaborated on a Python-based AI proctoring prototype maintaining 99% uptime."
+          - "Automated API debugging workflows using Postman, reducing integration errors and documenting AI-driven findings for stakeholder review."
+    projects:
+      - name: JobForge -- Agentic Job Application Pipeline
+        date: FastAPI, Gemini API, LangChain, Redis, MySQL, Docker
+        highlights:
+          - "Architected an agentic pipeline (Telegram bot) that scrapes JDs, scores ATS fit via a 3-tier skill matrix, and tailors resumes with Gemini 2.5 Flash in a self-healing loop."
+          - "Built on FastAPI with Redis state management, MySQL CRM, RenderCV PDF compilation, and SMTP email tracking with open-rate pixel alerts."
+      - name: Intelligent Chatbot for Academic Queries
+        date: GPT, Gemini API, LangChain, RAG, Python
+        highlights:
+          - "Engineered a Generative AI chatbot using RAG and LangChain with GPT; benchmarked Gemini API with advanced prompt engineering for safe, context-aware responses."
+          - "Integrated multi-turn dialogue for voice and text interfaces; documented the full AI integration workflow for cross-functional team review."
+    certifications_and_leadership:
+      - "**Game Development Professional (Programmer):** Mastered interactive logic, 2D/3D asset integration, and game physics optimisation."
+      - "**Leadership:** President, Association of Computer Engineering Students (2022--2024); led 10+ members, organised technical symposia, strengthened **presentation** and team-management skills."
+      - "**Volunteerism and Athletics:** NSS Volunteer (4 years); District-level Kho-Kho athlete."
+design:
+  theme: mycustomtheme
+  options:
+    section_order:
+      - summary
+      - education
+      - technical_skills
+      - experience
+      - projects
+      - certifications_and_leadership

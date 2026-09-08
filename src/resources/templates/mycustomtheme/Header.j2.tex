@@ -1,0 +1,16 @@
+% ── Header — plain-text contact line (no icon fonts, no glitches) ──
+\begin{center}
+  {\LARGE\scshape <<cv.name>>} \\ \vspace{3pt}
+  \small
+  <<cv.location>> $|$ << cv.phone | replace("tel:", "") | replace("-", " ") >> $|$
+  \href{mailto:<<cv.email>>}{<<cv.email>>}
+  ((* for network in cv.social_networks *))
+  ((* if network.network == "LinkedIn" *))
+  $|$ \href{https://linkedin.com/in/<<network.username>>}{LinkedIn}
+  ((* endif *))
+  ((* if network.network == "GitHub" *))
+  $|$ \href{https://github.com/<<network.username>>}{GitHub}
+  ((* endif *))
+  ((* endfor *))
+\end{center}
+\vspace{-4pt}

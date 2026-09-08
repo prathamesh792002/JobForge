@@ -1,0 +1,75 @@
+cv:
+  name: Prathamesh Shirole
+  location: Chennai, Tamil Nadu
+  email: pshirole2555@gmail.com
+  phone: "+91 90758 33524"
+  social_networks:
+    - network: LinkedIn
+      username: prathamesh-shirole-979281253
+    - network: GitHub
+      username: prathamesh792002
+  sections:
+    summary:
+      - "Software Engineer with experience building production Python backends, REST APIs, and automated data pipelines; strong foundation in FastAPI, Docker, MySQL, and cloud-adjacent tooling."
+    education:
+      - institution: Dr. Babasaheb Ambedkar Technological University
+        area: Computer Engineering
+        degree: B.Tech
+        start_date: 2020-01
+        end_date: 2024-07
+        highlights:
+          - "CGPA: 7.56"
+          - "Coursework: Data Structures and Algorithms, Operating Systems, DBMS, Machine Learning, Computer Networks."
+    technical_skills:
+      - label: Languages and Backend
+        details: Python, Core Java, FastAPI, Flask, Django, REST APIs
+      - label: Databases and Infra
+        details: MySQL, Redis, Docker, Basic AWS, Ubuntu Linux
+      - label: AI and Tooling
+        details: Gemini API, LangChain, TensorFlow, Scikit-Learn, NLP
+      - label: Dev Tools
+        details: Git, Postman, VS Code, PyCharm, Agile/Scrum
+    experience:
+      - company: Infosys Ltd.
+        position: Artificial Intelligence Intern
+        location: Chennai, India
+        start_date: 2025-07
+        end_date: present
+        highlights:
+          - "Developed scalable Python backend modules for text classification and NER, following enterprise SDLC standards and improving pipeline precision 15%."
+          - "Designed automated preprocessing pipelines reducing manual data-handling effort 25% and improving delivery timelines."
+          - "Integrated Gemini API and LangChain into internal tools, presenting findings to cross-functional stakeholders."
+          - "Debugged and optimized backend modules, ensuring production-grade reliability and 100% SDLC documentation coverage."
+      - company: Siliconmount Tech Services
+        position: Data Science Intern
+        location: Remote
+        start_date: 2024-02
+        end_date: 2024-06
+        highlights:
+          - "Implemented secure MySQL schemas (DDL/DML) with full ACID compliance for an enterprise-grade backend application."
+          - "Automated API debugging via Postman and collaborated with cross-functional teams to deliver reliable data management solutions on schedule."
+    projects:
+      - name: JobForge -- Automated Job Application Backend
+        date: FastAPI, Python, Redis, MySQL, Docker, Gemini API
+        highlights:
+          - "Built a production FastAPI backend orchestrating an 8-stage pipeline: JD scraping, ATS scoring, LLM-driven resume tailoring, PDF compilation, and SMTP email outreach."
+          - "Implemented async task management with Redis, MySQL CRM via SQLAlchemy ORM, webhook-driven Telegram bot integration, and Dockerized deployment."
+      - name: AI Smart Exam Proctoring System
+        date: Python, Flask, MySQL, TensorFlow, OpenCV
+        highlights:
+          - "Designed a scalable Flask/MySQL backend handling concurrent real-time proctoring logs with ACID compliance."
+          - "Implemented RESTful backend APIs for data ingestion and retrieval, applying SDLC best practices."
+    certifications_and_leadership:
+      - "**Game Development Professional (Programmer):** Mastered interactive logic, 2D/3D asset integration, and game physics optimisation."
+      - "**Leadership:** President, Association of Computer Engineering Students (2022--2024); led 10+ members, organised technical symposia, strengthened **presentation** and team-management skills."
+      - "**Volunteerism and Athletics:** NSS Volunteer (4 years); District-level Kho-Kho athlete."
+design:
+  theme: mycustomtheme
+  options:
+    section_order:
+      - summary
+      - education
+      - technical_skills
+      - experience
+      - projects
+      - certifications_and_leadership

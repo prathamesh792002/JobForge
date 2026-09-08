@@ -1,0 +1,11 @@
+% ── Education Entry — matches \resumeSubheading layout ──────────
+  \resumeSubheading
+    {<<entry.institution>>}{<<entry.location>>}
+    {<<entry.degree>> in <<entry.area>>((* if entry.gpa *)) --- CGPA: <<entry.gpa>>((* endif *))}{<<entry.start_date>> -- <<entry.end_date>>}
+    ((* if entry.highlights *))
+    \resumeListStart
+      ((* for highlight in entry.highlights *))
+      \resumeItem{<<highlight>>}
+      ((* endfor *))
+    \resumeListEnd
+    ((* endif *))

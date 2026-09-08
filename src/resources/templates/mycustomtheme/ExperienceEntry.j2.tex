@@ -1,0 +1,11 @@
+% ── Experience Entry — matches \resumeSubheading + \resumeListStart
+  \resumeSubheading
+    {<<entry.company>>}{<<entry.location>>}
+    {<<entry.position>>}{<<entry.start_date>> -- <<entry.end_date>>}
+    ((* if entry.highlights *))
+    \resumeListStart
+      ((* for highlight in entry.highlights *))
+      \resumeItem{<<highlight>>}
+      ((* endfor *))
+    \resumeListEnd
+    ((* endif *))

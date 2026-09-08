@@ -1,0 +1,9 @@
+% ── Normal Entry — used for Projects (\resumeProject style) ─────
+  \resumeProject{\textbf{<<entry.name>>}((* if entry.date *)) $|$ \textit{<<entry.date>>}((* endif *))}
+    ((* if entry.highlights *))
+    \resumeListStart
+      ((* for highlight in entry.highlights *))
+      \resumeItem{<<highlight>>}
+      ((* endfor *))
+    \resumeListEnd
+    ((* endif *))

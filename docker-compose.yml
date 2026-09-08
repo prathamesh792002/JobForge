@@ -1,0 +1,48 @@
+services:
+  # ── MySQL 8.0 ────────────────────────────────────────────────
+  jobforge-db:
+    image: mysql:8.0
+    container_name: jobforge-db
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: ${DB_NAME:-jobforge_db}
+      MYSQL_USER: ${DB_USER:-jobforge}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-password}
+    ports:
+      - "3306:3306"
+    volumes:
+      - jobforge_mysqldata:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost",
+             "-u", "${DB_USER:-jobforge}", "--password=${DB_PASSWORD:-password}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ── Redis 7 ──────────────────────────────────────────────────
+  jobforge-redis:
+    image: redis:7-alpine
+    container_name: jobforge-redis
+    restart: unless-stopped
+    # Enable append-only persistence so pending HITL payloads survive a
+    # container/laptop restart instead of being silently lost.
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - jobforge_redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+volumes:
+  jobforge_mysqldata:
+    driver: local
+  jobforge_redisdata:
+    driver: local

@@ -1,0 +1,95 @@
+# Base Resume — Data Science / Analytics Roles
+# This is a placeholder. Replace with your real resume data.
+# Structure must follow RenderCV YAML schema exactly.
+
+cv:
+  name: "John Doe"
+  label: "Data Scientist"
+  location: "San Francisco, CA"
+  email: "john.doe@email.com"
+  website: "https://johndoe.dev"
+  summary: >-
+    Data Scientist with 4+ years of experience transforming raw data into
+    actionable business insights. Expert in statistical modeling, data
+    visualization, and building automated analytics pipelines. Proven
+    ability to communicate complex findings to non-technical stakeholders.
+
+  sections:
+    experience:
+      - company: "AnalyticsCo"
+        position: "Senior Data Scientist"
+        start_date: "2022-06"
+        end_date: "present"
+        location: "San Francisco, CA"
+        highlights:
+          - "Built end-to-end data pipeline processing 50TB+ daily using Spark and Airflow on AWS EMR"
+          - "Developed customer segmentation model using k-means clustering, driving $2.3M in targeted campaign revenue"
+          - "Created executive dashboard in Tableau tracking 15+ KPIs, adopted by C-suite for quarterly reviews"
+          - "Led data quality initiative reducing data inconsistencies by 80% through automated validation checks"
+
+      - company: "InsightData Inc."
+        position: "Data Analyst"
+        start_date: "2020-07"
+        end_date: "2022-05"
+        location: "Chicago, IL"
+        highlights:
+          - "Designed A/B testing framework used across 3 product teams, improving experiment velocity by 4x"
+          - "Built automated reporting pipeline replacing 20+ manual Excel reports with real-time Looker dashboards"
+          - "Performed cohort analysis identifying key churn drivers, informing product changes that reduced churn by 18%"
+          - "Developed SQL-based anomaly detection system alerting on revenue metric deviations within 15 minutes"
+
+      - company: "StartupXYZ"
+        position: "Junior Data Analyst"
+        start_date: "2019-01"
+        end_date: "2020-06"
+        location: "Austin, TX"
+        highlights:
+          - "Created ETL pipelines using Python and dbt, centralizing data from 8 source systems into Snowflake"
+          - "Built predictive pricing model using regression analysis, improving margin accuracy by 12%"
+          - "Automated weekly business review reports saving 10+ analyst hours per week"
+
+    education:
+      - institution: "Stanford University"
+        area: "Statistics"
+        degree: "Master of Science"
+        start_date: "2017-09"
+        end_date: "2019-06"
+        gpa: "3.9/4.0"
+        highlights:
+          - "Thesis: Causal Inference Methods for A/B Testing in Digital Marketplaces"
+          - "Teaching Assistant for STATS202 (Data Mining and Analysis)"
+
+      - institution: "University of California, Berkeley"
+        area: "Applied Mathematics"
+        degree: "Bachelor of Science"
+        start_date: "2013-09"
+        end_date: "2017-06"
+        gpa: "3.8/4.0"
+        highlights:
+          - "Dean's List all semesters"
+
+    projects:
+      - name: "Open Source ETL Framework"
+        date: "2023"
+        highlights:
+          - "Created lightweight Python ETL framework for small-to-medium datasets with 800+ GitHub stars"
+          - "Supports CSV, JSON, Parquet, and database connectors with built-in data validation"
+
+      - name: "COVID-19 Regional Impact Dashboard"
+        date: "2021"
+        highlights:
+          - "Built interactive Streamlit dashboard visualizing pandemic economic impact across US counties"
+          - "Featured in local news; used by 3 county governments for resource allocation decisions"
+
+    skills:
+      - label: "Languages"
+        details: "Python, SQL, R, Bash, Scala"
+      - label: "Analytics & ML"
+        details: "pandas, NumPy, scikit-learn, statsmodels, XGBoost, SciPy"
+      - label: "Data Engineering"
+        details: "Spark, Airflow, dbt, Snowflake, BigQuery, Kafka, Fivetran"
+      - label: "Visualization"
+        details: "Tableau, Looker, Matplotlib, Plotly, Streamlit, Power BI"
+
+design:
+  theme: "classic"

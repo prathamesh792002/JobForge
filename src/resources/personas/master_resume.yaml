@@ -1,0 +1,120 @@
+# ══════════════════════════════════════════════════════════════════
+# PRATHAMESH SHIROLE — Master Resume
+# Used by JobForge for all AI-driven tailoring.
+#
+# DO NOT rename or delete this file. The bot always loads from here.
+# To update your resume, edit this file only.
+#
+# Schema: RenderCV v1.18
+# ══════════════════════════════════════════════════════════════════
+
+cv:
+  name: "Prathamesh Shirole"
+  location: "Chennai, Tamil Nadu"
+  email: "pshirole2555@gmail.com"
+  phone: "+919075833524"
+  social_networks:
+    - network: LinkedIn
+      username: "prathamesh-shirole"
+    - network: GitHub
+      username: "prathamesh-shirole"
+
+  sections:
+    summary:
+      - "Enthusiastic AI & Python developer (fresh graduate) with hands-on experience in **Generative AI**,
+        **GPT**, **Gemini**, **AI Copilots**, **LLM integration**, and
+        **Python-based automation**. Passionate about researching **emerging AI technologies**,
+        building **proof-of-concept** prototypes, and presenting **AI-driven** innovations
+        to cross-functional stakeholders to improve business processes."
+
+    education:
+      - institution: "Dr. Babasaheb Ambedkar Technological University"
+        area: "Computer Engineering"
+        degree: "B.Tech"
+        location: "Lonere, India"
+        start_date: "2020-01"
+        end_date: "2024-07"
+        gpa: "7.56"
+        highlights:
+          - "Coursework: Data Structures & Algorithms, Machine Learning, DBMS, Operating Systems, AI."
+
+    technical_skills:
+      - label: "Generative AI & LLMs"
+        details: "GPT (OpenAI API), Gemini, AI Copilot (GitHub Copilot), Prompt Engineering, RAG Frameworks, LLM Integration, AI Agents"
+      - label: "AI / ML"
+        details: "TensorFlow, Scikit-Learn, NumPy, Pandas, OpenCV, NLP (NER, Text Classification)"
+      - label: "Languages & Back-end"
+        details: "Python, Core Java, MySQL, Flask, Django"
+      - label: "Automation & Tools"
+        details: "n8n, Git, VS Code, PyCharm, NotebookLM, Basic AWS, Ubuntu Linux"
+      - label: "Soft Skills"
+        details: "Technical Presentation, Cross-functional Collaboration, Innovation, Documentation"
+
+    experience:
+      - company: "Infosys Ltd."
+        position: "Artificial Intelligence Intern"
+        location: "Chennai, India"
+        start_date: "2025-07"
+        end_date: "present"
+        highlights:
+          - "Built **AI-driven** text classification and NER modules in Python, improving data-labelling
+            precision by 15% on high-volume unstructured datasets and streamlining a critical
+            **business process**."
+          - "Designed automated preprocessing pipelines leveraging **emerging AI** techniques,
+            cutting feature-engineering time by 25% and boosting model training efficiency."
+          - "Developed and **presented** **Generative AI** **proof-of-concept**
+            prototypes to **cross-functional stakeholders**, recommending innovative
+            **LLM integration** use cases for internal workflows."
+          - "Authored enterprise-standard technical documentation for AI model deployment,
+            ensuring 100% SDLC compliance."
+
+      - company: "Siliconmount Tech Services"
+        position: "Data Science Intern"
+        location: "Remote"
+        start_date: "2024-02"
+        end_date: "2024-06"
+        highlights:
+          - "Implemented DDL/DML schemas for sensitive exam data with ACID compliance; collaborated
+            with **cross-functional teams** on a Python-based AI proctoring **prototype**,
+            maintaining 99% uptime."
+          - "Automated API debugging workflows using Postman and documented **AI-driven**
+            findings for stakeholder review."
+
+    projects:
+      - name: "AI Smart Exam Proctoring System"
+        date: "Python, TensorFlow, Flask, OpenCV, MySQL"
+        highlights:
+          - "**AI-driven** computer-vision **proof-of-concept** using OpenCV/TensorFlow
+            to detect suspicious behaviour in real-time, automating a manual academic
+            **business process** with **innovative** AI technology."
+          - "Built a Python/Flask backend for concurrent proctoring logs; presented prototype
+            and findings to academic stakeholders."
+
+      - name: "Intelligent Chatbot for Academic Queries"
+        date: "GPT (OpenAI API), Gemini, NLP, Voiceflow, Python"
+        highlights:
+          - "Engineered a **Generative AI** **AI Copilot** using **GPT** and
+            **RAG frameworks**; benchmarked **Gemini** API as an alternative model,
+            applying advanced **prompt engineering** for safe, context-aware responses."
+          - "Integrated multi-turn dialogue for voice/text interfaces; documented the full
+            **AI integration** workflow and recommended **automation** extensions
+            to cross-functional team members."
+
+    certifications_and_leadership:
+      - "**Game Development Professional (Programmer):** Mastered interactive logic,
+        2D/3D asset integration, and game physics optimisation."
+      - "**Leadership:** President, Association of Computer Engineering Students (2022--2024);
+        led 10+ members, organised technical symposia, strengthened **presentation**
+        and team-management skills."
+      - "**Volunteerism & Athletics:** NSS Volunteer (4 years); District-level Kho-Kho athlete."
+
+design:
+  theme: "mycustomtheme"
+  options:
+    section_order:
+      - summary
+      - education
+      - technical_skills
+      - experience
+      - projects
+      - certifications_and_leadership

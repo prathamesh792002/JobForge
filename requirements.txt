@@ -1,0 +1,45 @@
+# ── Web Framework & Server ────────────────────────────────────
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.32.0,<1.0.0
+gunicorn>=22.0.0,<23.0.0
+python-multipart>=0.0.12,<1.0.0
+
+# ── Telegram Bot ──────────────────────────────────────────────
+python-telegram-bot[webhooks]>=21.7,<22.0.0
+
+# ── Redis & Task Queue ───────────────────────────────────────
+redis>=5.2.0,<6.0.0
+celery[redis]>=5.4.0,<6.0.0
+
+# ── Database ──────────────────────────────────────────────────
+aiomysql>=0.2.0,<1.0.0
+PyMySQL>=1.1.0,<2.0.0
+sqlalchemy[asyncio]>=2.0.36,<3.0.0
+alembic>=1.14.0,<2.0.0
+
+# ── Schema Validation & Settings ─────────────────────────────
+pydantic>=2.10.0,<3.0.0
+pydantic-settings>=2.6.0,<3.0.0
+python-dotenv>=1.0.0,<2.0.0
+
+# ── LLM / AI ─────────────────────────────────────────────────
+google-genai>=2.0.0,<3.0.0
+
+# ── Web Scraping ──────────────────────────────────────────────
+firecrawl-py>=1.5.0,<2.0.0
+playwright>=1.49.0,<2.0.0
+
+# ── PDF Compilation ──────────────────────────────────────────
+rendercv>=1.16,<2.0.0
+PyMuPDF>=1.24.0,<2.0.0   # page-count check for shrink-to-fit one-page enforcement
+
+# ── Gmail OAuth2 & API ───────────────────────────────────────
+google-auth>=2.36.0,<3.0.0
+google-auth-oauthlib>=1.2.0,<2.0.0
+google-api-python-client>=2.155.0,<3.0.0
+
+# ── HTTP Client ───────────────────────────────────────────────
+httpx>=0.28.0,<1.0.0
+
+# ── YAML Processing ──────────────────────────────────────────
+pyyaml>=6.0.0,<7.0.0

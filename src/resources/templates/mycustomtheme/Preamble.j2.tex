@@ -1,0 +1,73 @@
+% ── JobForge Custom Theme — Preamble ────────────────────────────
+% Clean, consistent single-page resume layout.
+%   - 0.45in margins on all four sides (compact but readable)
+%   - NO hyphenation → words never split across lines
+%   - single consistent leading + uniform entry/bullet spacing
+% NOTE: the geometry/leading/spacing values below are the *baseline* density.
+% compiler.py may rewrite them (shrink-to-fit) if a resume still overflows to
+% a 2nd page — see _apply_density() there. Font stays 10pt for ATS/readability.
+% ────────────────────────────────────────────────────────────────
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% Exactly 0.5in on all four sides.
+\usepackage[letterpaper,margin=0.45in]{geometry}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% No page number / no header band → the 0.5in top margin is real whitespace.
+\pagestyle{empty}
+
+% Left-aligned AND hyphenation fully disabled → every word renders whole and
+% wraps as a single unit to the next line; a word is never split mid-word.
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\righthyphenmin=62
+\lefthyphenmin=62
+\tolerance=9999
+\hbadness=10000
+\setlength{\emergencystretch}{3em}
+
+% One consistent leading for the whole document (uniform everywhere).
+\linespread{1.0}
+\urlstyle{same}
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section headings — a single consistent vertical rhythm everywhere.
+\titleformat{\section}{\scshape\large}{}{0em}{}[\color{black}\titlerule\vspace{2pt}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+% Helpers
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+% Experience / Education subheading — two rows. The gap between the
+% company/institution row and the title/date row is the fixed tabular row
+% spacing, so it is IDENTICAL for every entry. Dates sit flush at the right
+% margin, giving every entry the same right edge.
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+  \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small#4} \\
+  \end{tabular*}}
+
+% Project heading — a normal wrapping line (never a rigid tabular), so a long
+% name + tech stack wraps cleanly instead of overflowing past the right margin.
+\newcommand{\resumeProject}[1]{\vspace{1pt}\item\small{#1}}
+
+% Itemize environments — uniform hanging indent + consistent spacing.
+\newcommand{\resumeSubStart}{\begin{itemize}[leftmargin=0in,label={},topsep=2pt,parsep=0pt,itemsep=2pt]}
+\newcommand{\resumeSubEnd}{\end{itemize}}
+\newcommand{\resumeListStart}{\begin{itemize}[leftmargin=0.2in,topsep=2pt,itemsep=1pt,parsep=0pt]}
+\newcommand{\resumeListEnd}{\end{itemize}}
