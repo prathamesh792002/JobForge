@@ -63,3 +63,19 @@ volumes:
     driver: local
   jobforge_redisdata:
     driver: local
+
+  # ── Caddy (Automatic HTTPS) ──────────────────────────────────
+  caddy:
+    image: caddy:2-alpine
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      # We read the domain from the .env file!
+      - DOMAIN=${APP_BASE_URL}
+    # Tell Caddy to strip https:// and serve the domain automatically
+    command: sh -c 'caddy reverse-proxy --from $${DOMAIN#https://} --to jobforge-app:8000'
+    depends_on:
+      - jobforge-app
