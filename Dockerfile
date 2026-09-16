@@ -52,11 +52,11 @@ RUN wget -qO- "https://yihui.org/tinytex/install-bin-unix.sh" | sh \
         fontawesome5 \
         roboto \
         lato \
-        sourcesanspro \
         tcolorbox \
         environ \
         trimspaces \
         changepage \
+    || true \
     && tlmgr path add
 
 # Ensure TinyTeX is on PATH
