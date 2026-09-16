@@ -58,12 +58,6 @@ services:
       - ./credentials.json:/app/credentials.json:ro
       - ./token.json:/app/token.json:ro
 
-volumes:
-  jobforge_mysqldata:
-    driver: local
-  jobforge_redisdata:
-    driver: local
-
   # ── Caddy (Automatic HTTPS) ──────────────────────────────────
   caddy:
     image: caddy:2-alpine
@@ -79,3 +73,9 @@ volumes:
     command: sh -c 'caddy reverse-proxy --from $${DOMAIN#https://} --to jobforge-app:8000'
     depends_on:
       - jobforge-app
+
+volumes:
+  jobforge_mysqldata:
+    driver: local
+  jobforge_redisdata:
+    driver: local
