@@ -40,8 +40,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # ── Install TinyTeX ──────────────────────────────────────────
+ENV PATH="/root/.TinyTeX/bin/x86_64-linux:/root/bin:${PATH}"
 RUN wget -qO- "https://yihui.org/tinytex/install-bin-unix.sh" | sh \
-    && /root/.TinyTeX/bin/*/tlmgr path add \
+    && tlmgr path add \
     && tlmgr install \
         collection-latexrecommended \
         collection-fontsrecommended \
