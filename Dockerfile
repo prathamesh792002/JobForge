@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     gnupg \
     ca-certificates \
+    xz-utils \
     # Playwright Chromium dependencies
     libnss3 \
     libnspr4 \
